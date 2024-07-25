@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!--Both, this line and the <html> line are used to set up the site-->
+
+<html>
+
+<head> <!--This appears at the tab of the webpage-->
+    <title>My First Website</title> <!--This is the tab title-->
+</head>
+<body> <!--This appears on the webpage-->
+    <!-- This is a comment-->
+    This is plain text
+    <h1>This is A large Header</h1>
+    <hr> <!--This is a horizontal line-->
+    <h2>This is a smaller Header</h2>
+    <br> <!-- This is a line break-->
+    <h6>This is the smallest Header</h6>
+    <p>This is a paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates accusantium sapiente non quasi, adipisci vero libero omnis tempore odio, nemo asperiores in similique! Iure incidunt porro beatae rerum tenetur?</p>
+
+    <!--Adding Hyperlinks:-->
+    <a href="https://www.google.com" target=_blank title="This takes you to Google"> <!--This is the url. target=_self is default and does not open new tab. target=_blank opens new tab. title="" shows that text when you hover over a link-->
+        Google <!--Display Text-->
+    </a>
+    
+    <br>
+
+    <a href="page2.html" target=_blank title="This takes you to Page 2"> <!--This opens the page2 file-->
+        Page 2 <!--Display Text-->
+    </a>
+
+    <br>
+
+    <a href="mailto:fake123@gmail.com" target=_self title="Email me"> <!--This opens the mail app-->
+        Email <!--Display Text-->
+    </a>
+
+    <!--Adding Images-->
+        <!--Before adding an image, first drag it into the same folder as this index.html folder-->
+        <!--Could leave as <img src="goomba.png"> if it were in same folder, but if there is a subfolder full of images, heres how to access that -->
+        <img src="/images/goomba.png" height="300" alt="This is an image of a goomba" title="goomba"> <!--replace "images" with the name of the folder-->
+            <!--Can also add "width" to change image width-->
+            <!--the alt section is good for people with screen readers and should always be used on images-->
+
+        <!--Now to add a hyper link-->
+        <a href="https://en.wikipedia.org/wiki/Goomba" target="_blank">
+        <img src="/images/goomba.png" height="300" alt="This is an image of a goomba" title="goomba">
+        </a>
+
+    <!--Adding mp3 files-->
+        <audio controls muted loop src="Rise Funk And Trunk - Windows of Ken.mp3"> 
+            <!-- 
+            controls: add pause play button
+            autoplay: starts music automatically
+            muted: starts music on muted
+            loop: loops the music
+            There may be more commands too
+            -->
+        </audio>
+            
+
+        <!--To make sure that the user does have access to the file, you can add failsafes. These will play backup files or text-->
+        <audio controls muted loop> 
+            <source src="-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.mp3"> <!--I believe it goes 1 by 1 and plays the topmost supported file. If no mp3 support, it will play wav. If there IS wav, it wont display the message-->
+            <source src="-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.wav"> <!--we dont have a .wav file but if we did, it would pull this-->
+            This browser does not support HTML5 audio
+        </audio>
+
+</body>
+
+</html>
