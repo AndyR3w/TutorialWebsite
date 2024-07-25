@@ -35,17 +35,17 @@
     <!--Adding Images-->
         <!--Before adding an image, first drag it into the same folder as this index.html folder-->
         <!--Could leave as <img src="goomba.png"> if it were in same folder, but if there is a subfolder full of images, heres how to access that -->
-        <img src="goomba.png" height="300" alt="This is an image of a goomba" title="goomba"> <!--replace "images" with the name of the folder-->
+        <img src="./images/goomba.png" height="300" alt="This is an image of a goomba" title="goomba"> <!--replace "images" with the name of the folder. Make sure to use the period-->
             <!--Can also add "width" to change image width-->
             <!--the alt section is good for people with screen readers and should always be used on images-->
 
         <!--Now to add a hyper link-->
         <a href="https://en.wikipedia.org/wiki/Goomba" target="_blank">
-        <img src="/images/goomba.png" height="300" alt="This is an image of a goomba" title="goomba">
+        <img src="./images/goomba.png" height="300" alt="This is an image of a goomba" title="goomba">
         </a>
 
     <!--Adding mp3 files-->
-        <audio controls loop src="/music/Rise Funk And Trunk - Windows of Ken.mp3"> 
+        <audio controls loop src="./music/Rise Funk And Trunk - Windows of Ken.mp3"> 
             <!-- 
             controls: add pause play button
             autoplay: starts music automatically
@@ -58,15 +58,15 @@
 
         <!--To make sure that the user does have access to the file, you can add failsafes. These will play backup files or text-->
         <audio controls loop> 
-            <source src="/music/-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.mp3"> <!--I believe it goes 1 by 1 and plays the topmost supported file. If no mp3 support, it will play wav. If there IS wav, it wont display the message-->
-            <source src="/music/-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.wav"> <!--we dont have a .wav file but if we did, it would pull this-->
+            <source src="./music/-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.mp3"> <!--I believe it goes 1 by 1 and plays the topmost supported file. If no mp3 support, it will play wav. If there IS wav, it wont display the message-->
+            <source src="./music/-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.wav"> <!--we dont have a .wav file but if we did, it would pull this-->
             This browser does not support HTML5 audio
         </audio>
 
 
     <!--Adding mp4 or video files-->
         <video autoplay loop muted width="300"> 
-            <source src="intro.mov"> <!--just fyi, src means source-->
+            <source src="./video/intro.mov"> <!--just fyi, src means source-->
             This browser does not support HTML5 video
 
         </video>
