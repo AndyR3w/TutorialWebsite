@@ -15,6 +15,7 @@
     <h6>This is the smallest Header</h6>
     <p>This is a paragraph: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates accusantium sapiente non quasi, adipisci vero libero omnis tempore odio, nemo asperiores in similique! Iure incidunt porro beatae rerum tenetur?</p>
 
+
     <!--Adding Hyperlinks:-->
     <a href="https://www.google.com" target=_blank title="This takes you to Google"> <!--This is the url. target=_self is default and does not open new tab. target=_blank opens new tab. title="" shows that text when you hover over a link-->
         Google <!--Display Text-->
@@ -32,6 +33,7 @@
         Email <!--Display Text-->
     </a>
 
+
     <!--Adding Images-->
         <!--Before adding an image, first drag it into the same folder as this index.html folder-->
         <!--Could leave as <img src="goomba.png"> if it were in same folder, but if there is a subfolder full of images, heres how to access that -->
@@ -43,6 +45,7 @@
         <a href="https://en.wikipedia.org/wiki/Goomba" target="_blank">
         <img src="./images/goomba.png" height="300" alt="This is an image of a goomba" title="goomba">
         </a>
+
 
     <!--Adding mp3 files-->
         <audio controls loop src="./music/Rise Funk And Trunk - Windows of Ken.mp3"> 
@@ -109,7 +112,7 @@
         </ol>
 
         <h4>Description List</h4>
-        <dl> <!-- (description list)-->
+        <dl> <!-- (stands for description list)-->
             <dt>HTML</dt> <!--dt means description term-->
             <dd>This adds structure to a webpage</dd> <!-- dd means description definition-->
             <dt>CSS</dt> 
@@ -118,6 +121,47 @@
             <dd>This adds functionality to a webpage</dd>
         </dl>
     
+
+    <!-- Creating a table/chart-->
+        <h3>Store Hours</h3>
+        <table bgcolor="black" width="500"> <!-- The background and width can be changed-->
+            <tr bgcolor="grey"> <!-- tr stands for table row. bgcolor is an optional variable: background color-->
+                <th>Sunday</th> <!-- th Stands for table header-->
+                <th width="200">Monday</th> <!-- The width of each box can also be changed-->
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr> <!-- this ends the first row-->
+            <tr bgcolor="lightgrey" align="center"> <!-- This creates row 2. align can change text location in box-->
+                <td>Closed</td> <!--td stands for table data-->
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>Closed</td>
+            </tr>
+        </table>
+
+
+    <!-- Adding color to a webpage -->
+    <a href="page2.html" target=_self title="This takes you to Page 2"> <!--This opens the page2 file-->
+        Please See page2.html line 24 and 30 for adding background/text color <!--Display Text-->
+    </a>
+
+
+    <!-- Using Span and Div-->
+     <div style="background-color: #444444;"> <!-- Div allows you to apply a color to all things inside of its brackets. Normally you would have to go into each <p> and add style="backgroun.... -->
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, molestias alias tempora, saepe cum doloremque officiis neque deserunt aut similique error inventore suscipit corporis, sint cumque! Aliquam dolor magnam quae.</p>
+
+     <p>Lorem <span style="color: blue;">ipsum dolor sit amet consectetur adipisicing elit.</span> Veritatis, obcaecati tempore nostrum aliquam laborum assumenda dignissimos beatae optio a modi illum sed vel tempora cum fugit architecto consequatur dolore hic?</p>
+        <!-- span allows you to edit text inside a paragraph instead of forcing you to do the entire thing one color-->
+     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus necessitatibus fugiat perferendis rem doloribus illo, similique obcaecati fuga culpa ipsa iure rerum voluptatem veritatis, ut placeat a optio adipisci veniam.</p>
+    </div>
+
+
 </body>
 
 </html>
