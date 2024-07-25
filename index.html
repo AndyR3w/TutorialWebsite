@@ -45,7 +45,7 @@
         </a>
 
     <!--Adding mp3 files-->
-        <audio controls loop src="Rise Funk And Trunk - Windows of Ken.mp3"> 
+        <audio controls loop src="/music/Rise Funk And Trunk - Windows of Ken.mp3"> 
             <!-- 
             controls: add pause play button
             autoplay: starts music automatically
@@ -58,11 +58,35 @@
 
         <!--To make sure that the user does have access to the file, you can add failsafes. These will play backup files or text-->
         <audio controls loop> 
-            <source src="-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.mp3"> <!--I believe it goes 1 by 1 and plays the topmost supported file. If no mp3 support, it will play wav. If there IS wav, it wont display the message-->
-            <source src="-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.wav"> <!--we dont have a .wav file but if we did, it would pull this-->
+            <source src="/music/-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.mp3"> <!--I believe it goes 1 by 1 and plays the topmost supported file. If no mp3 support, it will play wav. If there IS wav, it wont display the message-->
+            <source src="/music/-lost-in-you---kanye-west-x-wizkid-x-pop_TK16574004.mp3.wav"> <!--we dont have a .wav file but if we did, it would pull this-->
             This browser does not support HTML5 audio
         </audio>
 
+
+    <!--Adding mp4 or video files-->
+        <video autoplay loop muted width="300"> 
+            <source src="intro.mov"> <!--just fyi, src means source-->
+            This browser does not support HTML5 video
+
+        </video>
+
+
+
+    <!-- HTML Text Formatting (i.e. bold, italic, etc.)-->
+        <p>This is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <big>big</big> text</p>
+        <p>This is <small>small</small> text</p>
+        <p>This is <sub>subscript</sub> text</p>
+        <p>This is <sup>superscript</sup> text</p>
+        <p>This is <ins>inserted</ins> text</p>
+        <p>This is <del>deleted</del> text</p>
+        <p>This is <mark>marked</mark> text</p>
+
+
+    
 </body>
 
 </html>
