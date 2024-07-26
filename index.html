@@ -4,6 +4,17 @@
 
 <head> <!--This appears at the tab of the webpage-->
     <title>My First Website</title> <!--This is the tab title-->
+
+
+    <!-- Creating metadata about our webpage. Essentially it is data about data. Think of how an image has a data and time associated with it (thats metadata)-->
+        <!-- Note, metadata goes into the <head> section of the body-->
+        <meta charset="UTF-8">
+        <meta name="description" content="Free HTML tutorial for beginners"> <!-- self closing tag so dont need a </meta> -->
+        <meta name="keywords" content="HTML, tutorial, beginners">
+        <meta name="author" content="AndyR3w">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- can be used to scale the webpage depending on what device the user is using-->
+        <meta http-equiv="refresh" content="30"> <!-- Every 30 seconds the page will refresh-->
+
 </head>
 <body> <!--This appears on the webpage-->
     <!-- This is a comment-->
@@ -161,6 +172,42 @@
      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus necessitatibus fugiat perferendis rem doloribus illo, similique obcaecati fuga culpa ipsa iure rerum voluptatem veritatis, ut placeat a optio adipisci veniam.</p>
     </div>
 
+
+    <!-- How to use an iframe-->
+        <!-- they embed content from another source into an HTML document
+            ex. used for ads, and used in many hacking techniques-->
+        <iframe src="https://www.google.com"></iframe> <!-- Many websites (google for example) dont allow iframe. This is because you can use it to make your webpage look like another webpage.
+                                                        It will allow you to use the other webpage as normal but you could capture keystrokes and stuff so its just not safe and many websites disable this-->
+        <iframe src="https://www.wikipedia.org" width="500" height="500"></iframe> <!-- as of the creation of this code (July 25th, 2024), wikipedia does allow you to do this-->
+        <!-- This can also be done with other html files that you have. For example if you have ads that you want to interact with outside of being an image with hyperlink-->
+        <iframe style="border:0" src="ad.html" width="500" height="200"></iframe> <!-- by default these have a boarder around them. By adding style="border... we can edit that-->
+
+
+    <!-- Adding buttons -->
+        <button>click me</button>
+        <!-- Can add a hyperlink by using "a tags"-->
+            <a href="https://www.google.com">
+                <button>google button</button>
+            </a>
+        <!-- We can also disable buttons like this -->
+            <button disabled>disabled button</button>
+        <!-- The colors can also be changed-->
+            <button style="background-color: aquamarine;color:blueviolet;border-radius:5px">Css button</button> <!-- border radius makes the edges curve-->
+        <!-- Adding JavaScript functionality -->
+            <button onclick="doSomething()">JavaScript Button</button> <!-- "onclick is a default function that automatically is performed. "doSomething" is a custom made JavaScript file that needs to be created-->
+
+            <p id="test">Hello</p> <!-- This appears at the beginning with no button presses-->
+
+            <!-- Start of JavaScript Code -->
+                <script> //this is how to comment in JavaScript
+                    function doSomething(){ //when the button is pressed, this function will run
+                        document.getElementById("test").innerHTML = "Goodbye" //it will replace the <p> text to say "goodbye" instead of "hello"
+                    } //JavaScript will be covered in more detail in the JavaScript tutorial
+                </script> 
+            <!-- End of JavaScript Code -->
+
+
+    <!-- Creating Forms -->
 
 </body>
 
