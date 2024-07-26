@@ -1,0 +1,29 @@
+/* To make comments in css do this */
+/* this file is used to select specific section of the html file and change their style */
+/* This file can be used to format multiple pages too. as long as you link the css file, it will work. Do it the same was as you see in index.html*/
+
+    body{
+        background-color: blue; /* the body of the file (the background) is now blue.  */
+    }
+    h1{
+        color: yellow; /* ALL h1 headers are now yellow. All other text is left alone*/
+    }
+
+
+/* This Can change specific sections of text too if you assign the text an id. See index.html line 307*/
+    #ThisCanBeAnythingBTW{ /* Write # and then the name of the id. Then use curly bracket to add color*/
+        color: purple;
+    }
+    #paragraph2{
+        background-color: white;
+    }
+
+    /* you can also alter text by class by using a .classname   Since the class name for this example is even and odd, we'll use those*/
+    .even{
+        color: aquamarine;
+    }
+    .odd{
+        color: darkgrey;
+    } /* by looking at the webpage you can see that the two paragraphs from the same class are the same color but the one inbetween is not*/
+
+    
