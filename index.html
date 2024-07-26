@@ -208,6 +208,67 @@
 
 
     <!-- Creating Forms -->
+        <!--if this next line is left as <form> the data entered will not be saved-->
+        <form action="action_page.php" method="POST"> <!-- say method="GET" when doing searches. This is unsecure and links to your url. Use "POST" for passwords because it's secure-->
+            <!-- NOTE: For the previous line, the information will not be saved because we dont have a server set up. Once set up, we can use php to send data to a page/server. This goes in the action="_____" section. PHP is a programming language that can be used for this-->
+
+            <div> <!-- Normally these would be in one line. The div brackets make them 2 seperate lines-->
+                <label for="fname">first name:</label> <!-- The "for="fname" is recommended because if you click the label, itll open the text box. its also good for screen readers. fname is first name-->
+                <input type="text" id="fname" name="fname" placeholder="Enter your name here"> <!-- "type" says that the box that opens should allow text to be entered in it. Not entirely sure about id and name yet but I think those relate to the previous line of code-->
+            </div>
+            <br> <!-- Adding a line break between the two boxes -->
+            <div>
+                <!-- Creating the second box-->
+                <label for="lname">first name:</label> <!--lname is last name-->
+                <input type="text" id="lname" name="lname" placeholder="Enter your name here" required> <!-- "required" can be put at the end of the input line to require it to be filled-->
+                <!-- Additional types that can be used instead of "text" are "password" (shows bubbles instead of text), "email" (requires an @ symbol), 
+                    "tel" (telephone number), "date" (shows an interactive calendar), "number" (I believe they can only enter numbers), "radio" (an example is shown below),
+                    "checkbox" (allows you to put a yes or no checkbox)-->
+                <!-- Additional variables such as palceholder are min="" and max="" (can be used for "number" type), maxlength="" (can be used for "password" type), value="" (sets the default value for types like "number")-->
+            </div>
+            <br>
+
+            <div>
+            <!-- Adding radio buttons. These basically make it so there is a multiple choice bubble answer where only one can be selected-->
+                <label for="Mr.">Mr.</label> <!-- Remember that when making "for" equal the "id", you can click on the text and it will fill in the bubble-->
+                <input type="radio" id="Mr." name="title" value="Mr."> <!-- By keeping the name of all three options the same, only one button can be pressed. Otherwise multiple could be-->
+
+                <label for="Mrs.">Mrs.</label>
+                <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+                <label for="Ph.D.">Ph.D.</label>
+                <input type="radio" id="Ph.D." name="title" value="Ph.D.">
+
+            </div>
+            <br>
+
+            <div>
+            <!-- Adding drop down lists -->
+                <label for="payment">payment:</label>
+                <select id="payment" name="payment"> <!-- Use <select> instead of <input> for dropdowns-->
+                    <option value="visa">Visa</option> <!-- each <option> is something that the user can select in the dropdown-->
+                    <option value="mastercard">msatercard</option>
+                    <option value="giftcard">giftcard</option>
+                </select>
+            </div>
+
+            <br>
+
+            <!-- Adding a reset button -->
+            <div>
+                <input type="reset"> <!-- This creates a reset button and will clear the typed form data when clicked-->
+            </div>
+            <br>
+
+            <!-- Adding a submit button-->
+             <div>
+                <input type="submit"> 
+             </div>
+
+
+
+        </form>
+
 
 </body>
 
